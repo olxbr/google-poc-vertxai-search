@@ -1,0 +1,28 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: google-poc-vertxai-search
+  description: The google team will be using repo for create a poc about vertexAI, for search engine team.
+  annotations:
+    github.com/project-slug: 'olxbr/google-poc-vertxai-search'
+    backstage.io/techdocs-ref: dir:.
+    graph.microsoft.com/group-id: bad5fd01-fdb6-4009-9248-5ba19a515c13
+    teams.olxbr.io/cloud-cost-center: 0b0d8f31-7b92-4aca-a652-624882e1596c
+    teams.olxbr.io/teams-id: 04a9dc34-151e-4ad3-afec-62c00dec5397
+    olxbr.io/critical: 'false'
+    olxbr.io/dora: search-engine
+    sonarqube.org/project-key: olxbr_google-poc-vertxai-search
+  tags:
+    - backstage-scaffolded
+    - do-search-engine
+    - dj-src
+  links:
+    - url: 'https://grid-olxbrasil.enterprise.slack.com/messages/support-olx-search-engine'
+      title: '#slack-channel'
+      icon: chat
+      type: api
+spec:
+  type: service
+  owner: group:default/squad-search-engine
+  lifecycle: experimental
+  system: system:default/ventricle-ads
